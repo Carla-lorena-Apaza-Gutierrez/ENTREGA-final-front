@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <link href = "https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&family=Inter:wght@100;200;300;700;800;900&family=Raleway:wght@100;300;400;500;600;700&family=Varela+Round&display=swap"rel = "stylesheet">
+    <meta content = "width=device-width, initial-scale=1.0" name = "viewport">
+    <meta name="description" content="Trinity Underwear: Lencería de alta calidad con diseños exclusivos. Encuentra conjuntos, bodys, y más con descuentos especiales.">
+    <meta name="keywords" content="lencería, e-commerce, Trinity Underwear, conjuntos, bodys, ropa interior, descuentos">
+    <meta name="author" content="Carla Lorena Apaza Gutierrez">
+    <title>trinity underwear</title>
+    <link href = "./assets/css/style.css" rel = "stylesheet"/>
+</head>
+<body>
+    <header class="header">
+        <!-- Primera fila -->
+        <div class="header-row">
+        <!-- Nuevo buscador con modal -->
+        <div class="search-container">
+            <!-- Imagen de la lupa -->
+            <img src="./assets/img/iconos/PhMagnifyingGlassLight.svg" alt="Buscar" id="search-icon" class="search-icon">
+            <!-- Modal de búsqueda -->
+            <div id="search-modal" class="search-modal hidden" role="dialog" aria-labelledby="search-modal-title" aria-hidden="true">
+                <div class="search-modal-header">
+                    <input type="text" placeholder="Buscar productos..." class="search-bar" aria-label="Buscar productos">
+                    <button id="close-search" class="close-search-btn" aria-label="Cerrar búsqueda">&times;</button>
+                </div>
+            </div>
+        </div>
+            <!-- Logo centrado -->
+            <div class="logo">
+                <img src="./assets/img/logo.svg" alt="Logo">
+            </div>
+            <!-- Logueo y carrito -->
+    <button class="nav-button" id="login-button">
+        <img src="./assets/img/iconos/EtProfileFemale.svg" alt="Loguearse" class="icon">
+    </button>
+
+<!-- Modal de inicio de sesión -->
+<div id="login-modal" class="login-modal hidden" role="dialog" aria-labelledby="login-modal-title" aria-hidden="true">
+    <div class="login-modal-header">
+        <h2 id="login-modal-title">Iniciar Sesión</h2>
+        <button id="close-login" class="close-login-btn" aria-label="Cerrar inicio de sesión">&times;</button>
+    </div>
+    <div class="login-modal-body">
+        <form id="login-form">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required>
+            
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
+            
+            <button type="submit" class="login-btn">Ingresar</button>
+        </form>
+    </div>
+    </div>
+
+        <button class="nav-button" id="cart-button">
+                <img src="./assets/img/iconos/HeroiconsShoppingBag20Solid.svg" alt="Carrito" class="icon">
+        </button>                
+            </div>
+    </div>
+    
+        <!-- Segunda fila -->
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="dropdown">
+                    <a href="#lenceria">Productos</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#conjuntos">CONJUNTOS</a></li>
+                        <li><a href="#corpiños">CORPIÑOS</a></li>
+                        <li><a href="#bombis">BOMBIS</a></li>
+                        <li><a href="#bodys">BODYS</a></li>
+                    </ul>
+                </li>                
+                <li><a href="#talle">¿Cuál es mi talle?</a></li>
+                <li><a href="#comprar">¿Cómo comprar?</a></li>
+                <li><a href="#faq">Preguntas frecuentes</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#cuidados">Cuidados</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    </header>
+    
+    <div id="cart-modal" class="cart-modal hidden">
+        <div class="cart-modal-header">
+            <h2>Tu Carrito</h2>
+            <button id="close-cart" class="close-cart-btn">&times;</button>
+        </div>
+        <div class="cart-items">
+            <!-- Aquí se añadirán los productos dinámicamente -->
+        </div>
+        <div class="cart-footer">
+            <p>Total: $<span id="cart-total">0</span></p>
+            <button class="checkout-btn">Finalizar Compra</button>
+        </div>
+    </div>
+    
+
+
+
+    <main class="main">
+        <div class="banner">
+            <button class="banner-button">DESCUENTOS</button>
+            <img src="./assets/img/banner.png" alt="Banner" class="banner-image">
+        </div>
+        
+        <section id="lenceria" class="productos">
+            <h2>Lencería</h2>
+            <ul class="producto-lista">
+                <li class="producto">
+                    <img src="./assets/img/productos/conjunto1.jpeg" alt="Producto 1">
+                    <p>CONJUNTO SOFIA<br>$20.000<br>del 85 al 105</p>
+                    <button class="add-to-cart-btn" data-id="1" data-name="CONJUNTO SOFIA" data-price="20000">Agregar al carrito</button>
+                </li>
+                <li class="producto">
+                    <img src="./assets/img/productos/conjunto2.jpeg" alt="Producto 2">
+                    <p>CONJUNTO PRIMAVERA<br>$27.000<br>del 85 al 105</p>
+                    <button class="add-to-cart-btn" data-id="2" data-name="CONJUNTO PRIMAVERA" data-price="27000">Agregar al carrito</button>
+                </li>
+                <li class="producto">
+                    <img src="./assets/img/productos/conjunto3.jpeg" alt="Producto 3">
+                    <p>CONJUNTO AFRODITA<br>$32.000<br>del 85 al 105</p>
+                    <button class="add-to-cart-btn" data-id="3" data-name="CONJUNTO AFRODITA" data-price="32000">Agregar al carrito</button>
+                </li>
+                <li class="producto">
+                    <img src="./assets/img/productos/conjunto4.jpeg" alt="Producto 4">
+                    <p>CONJUNTO FLORA<br>$18.000<br>del 85 al 105</p>
+                    <button class="add-to-cart-btn" data-id="4" data-name="CONJUNTO FLORA" data-price="18000">Agregar al carrito</button>
+                </li>
+                <li class="producto">
+                    <img src="./assets/img/productos/conjunto5.jpeg" alt="Producto 5">
+                    <p>CONJUNTO LUNA<br>$19.000<br>del 85 al 105</p>
+                    <button class="add-to-cart-btn" data-id="5" data-name="CONJUNTO LUNA" data-price="19000">Agregar al carrito</button>
+                </li>
+                <li class="producto">
+                    <img src="./assets/img/productos/conjunto6.jpg" alt="Producto 6">
+                    <p>BODY PASSION<br>$30.000<br>del 85 al 105</p>
+                    <button class="add-to-cart-btn" data-id="6" data-name="BODY PASSION" data-price="30000">Agregar al carrito</button>
+                </li>
+                <li class="producto">
+                    <img src="./assets/img/productos/conjunto7.jpg" alt="Producto 7">
+                    <p>CONJUNTO CLARA<br>$31.000<br>del 85 al 105</p>
+                    <button class="add-to-cart-btn" data-id="7" data-name="CONJUNTO CLARA" data-price="31000">Agregar al carrito</button>
+                </li>
+                <li class="producto">
+                    <img src="./assets/img/productos/conjunto8.jpg" alt="Producto 8">
+                    <p>CONJUNTO MEGAN<br>$22.000<br>del 85 al 105</p>
+                    <button class="add-to-cart-btn" data-id="8" data-name="CONJUNTO MEGAN" data-price="22000">Agregar al carrito</button>
+                </li>
+                <li class="producto">
+                    <img src="./assets/img/productos/conjunto9.jpg" alt="Producto 9">
+                    <p>LESS ROCOCO<br>$8.000 c/u<br>del 85 al 105</p>
+                    <button class="add-to-cart-btn" data-id="9" data-name="LESS ROCOCO" data-price="8000">Agregar al carrito</button>
+                </li>
+            </ul>
+        </section>
+        
+
+            <div class="foto-seccion">
+                <div class="foto">
+                    <img src="./assets/img/productos/oferta1.jpeg" alt="Imagen 1">
+                    <a href="#" class="boton">PACK X3<br>Ver todo</a>
+                </div>
+                <div class="foto">
+                    <img src="./assets/img/productos/oferta2.jpeg" alt="Imagen 2">
+                    <a href="#" class="boton">10% DESCUENTO<br>Ver todo</a>
+                </div>
+                <div class="foto">
+                    <img src="./assets/img/productos/oferta3.jpeg" alt="Imagen 3">
+                    <a href="#" class="boton">15% DESCUENTO<br>Ver todo</a>
+                </div>
+            </div>
+            
+        </section>
+        
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <!-- Columna 1: Suscripción -->
+            <div class="columna-suscripcion">
+                <h3>Suscribite y obtené 10% off en tu primer compra</h3>
+                <form id="suscripcion-form">
+                    <div class="suscribirse-form">
+                        <input type="email" id="suscripcion-email" placeholder="Tu Email" required>
+                        <button type="submit">Suscribirme</button>
+                    </div>
+                </form>
+            </div>
+    
+            <div class="columna-informacion">
+                <ul>
+                    <!-- Sobre Nosotros -->
+                    <li id="sobre-nosotros-btn">Sobre Nosotros</li>
+                    <div id="sobre-nosotros-text" class="hidden">
+                        <p>
+                            Lenceria hecha de manera artesanal, eligiendo los mejores textiles para
+                            hacerte sentir única.
+                        </p>
+                    </div>         
+                    <!-- Métodos de Envío -->
+                    <li id="metodos-envio-btn">Métodos de Envío</li>
+                    <div id="metodos-envio-text" class="hidden">
+                        <p>diferentes métodos de envío para tu comodidad:</p>
+                        <ul>
+                            <li>
+                                <img src="./assets/img/img envios, pagos/andreani.svg" alt="Envío rápido" class="small-img" />
+                                Envío rápido (24 horas)
+                            </li>
+                            <li>
+                                <img src="./assets/img/img envios, pagos/Correo Argentino.svg" alt="Envío estándar" class="small-img" />
+                                Envío estándar (3-5 días)
+                            </li>
+                        </ul>
+                    </div>
+            
+                    <li id="medios-pago-btn">Medios de Pago</li>
+                    <!-- Texto desplegable para "Medios de Pago" -->
+                    <div id="medios-pago-text" class="hidden">
+                        <p>Nuestros medios de pago:</p>
+                        <ul>
+                            <li><img src="./assets/img/iconos/tarjeta credito.svg" alt="Visa" class="small-img"> Tarjeta de crédito</li>
+                            <li><img src="./assets/img/iconos/mercado pago.svg" alt="MasterCard" class="small-img"> Mercado Pago</li>
+                            <li><img src="./assets/img/iconos/efectivo.svg" alt="PayPal" class="small-img"> Efectivo</li>
+                        </ul>
+                    </div>
+                    <li>Preguntas Frecuentes</li>
+                    <li>Información antes de comprar</li>
+                    <li>Redes Sociales</li>
+                    <div class="redes-sociales">
+                        <a id="instagram-link" href="https://www.instagram.com/trinity.underwear/profilecard/?igsh=dXRzdWJiNXd0OWc4" target="_blank">
+                            <img src="./assets/img/iconos/MdiInstagram.svg" alt="Instagram" class="small-img">
+                        </a>
+                    </div>                    
+                </ul>
+            </div>
+        <!-- Créditos -->
+        <div class="creditos">
+            <img src="./assets/img/iconos/TdesignCopyright.svg" alt="Logo de crédito" class="credit-img">
+            Creado por Carla Lorena Apaza Gutierrez
+        </div>
+    </footer>      
+    <script src="./assets/js/javascript.js"></script>
+</body>
+</html>
